@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minHeight="@dimen/widget_height"
+    android:minResizeHeight="@dimen/widget_min_height"
+    android:minResizeWidth="@dimen/widget_min_width"
+    android:minWidth="@dimen/widget_width"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/widget_nextgames"
+    tools:ignore="UnusedAttribute"
+    />
