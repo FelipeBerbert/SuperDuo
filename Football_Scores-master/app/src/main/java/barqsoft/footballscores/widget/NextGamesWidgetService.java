@@ -76,7 +76,10 @@ public class NextGamesWidgetService extends RemoteViewsService {
                 }
                 RemoteViews rViews = new RemoteViews(getPackageName(), R.layout.widget_scores_list_item);
 
-                //todo remotecontentdescription
+                if (Build.VERSION.SDK_INT > 15) {
+                    rViews.setContentDescription(R.id.home_crest, cursor.getString(COL_HOME));
+                    rViews.setContentDescription(R.id.away_crest, cursor.getString(COL_AWAY));
+                }
                 rViews.setTextViewText(R.id.home_name, cursor.getString(COL_HOME));
                 rViews.setTextViewText(R.id.away_name, cursor.getString(COL_AWAY));
                 rViews.setTextViewText(R.id.data_textview, cursor.getString(COL_MATCHTIME));

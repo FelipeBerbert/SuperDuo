@@ -28,7 +28,6 @@ public class NextGamesWidgetProvider extends AppWidgetProvider {
 
             setRemoteAdapter(context, rViews);
 
-            //todo click intents
 
             Intent intent = new Intent(context, MainActivity.class);
             PendingIntent headerPendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
