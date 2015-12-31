@@ -1,0 +1,3 @@
+# SuperDuo
+
+Remember to add the API key for the Footballscore App, in gradle.properties as: API_KEY=...
