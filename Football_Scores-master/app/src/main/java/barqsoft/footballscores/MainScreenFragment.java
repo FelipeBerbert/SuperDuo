@@ -60,7 +60,7 @@ public class MainScreenFragment extends Fragment implements LoaderManager.Loader
             setSelectedMatch(getActivity().getIntent().getDoubleExtra("matchId", 0));
             scoreList.smoothScrollToPosition(getActivity().getIntent().getIntExtra("position", 0));
             getActivity().getIntent().removeExtra("matchId");
-            scoreList.getViewTreeObserver().addOnGlobalLayoutListener(
+            scoreList.getViewTreeObserver().addOnGlobalLayoutListener(      //solution to scroll the listview after it finished loading, found at http://stackoverflow.com/questions/3313483/setting-listview-scroll-position-nicely-in-android
                     new ViewTreeObserver.OnGlobalLayoutListener() {
                         @Override
                         public void onGlobalLayout() {
